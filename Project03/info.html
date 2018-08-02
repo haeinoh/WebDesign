@@ -1,0 +1,126 @@
+<!-- info.html -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css"></link>
+	<script src="js/jquery.js"></script>
+	<script src="js/pop.js"></script>
+  <title> Info </title>
+
+</head>
+<body>
+
+ <header>
+   <div class="logo">
+	    <a href="index.html"><img src="images/logo.gif" title="logo"></a>
+   </div>
+   <nav>
+  <ul>
+    <li><a href="index.html" title="home">HOME</a></li>
+    <li><a href="about.html" title="About">ABOUT</a></li>
+    <li><a href="attraction.html" title="Attraction">ATTRACTION</a></li>
+    <li><a href="market.html" title="Traditional Marekt">TRADITIONAL MARKET</a>
+    <li><a class="active" href="info.html" title="Info">INFO</a></li> 
+  </ul>
+ </nav>
+ </header>
+
+<br><br><br><br><br><br>
+<hr class="hrstyle1">
+
+<div class="container">
+<div class="box1">
+  <div class="con_img">
+    <img src="images/tr01.jpg">
+  </div>
+  <div class="con_desc">
+    <h3>
+        <center>City BUS</center>
+    </h3>
+    <p> 
+        <strong>The City Bus</strong> is one of the most convenient transportation. <br>
+        <strong>Hours:</strong> 5:30AM - 00:00AM <br>
+        <strong>Fees(Adults):</strong> Transporation card: 1,200(won), cash: 1,300(won) <br>
+        <strong>Phone:</strong> +82) 02-2148-4160<br>
+        <strong>Website:</strong><a href="https://english.visitkorea.or.kr/enu/TRP/TP_ENG_8_1_1.jsp"> More Info</a>
+    </p>
+  </div>
+</div> 
+
+<div class="box5">
+  <div class="sub_img">
+    <img id="myImg" src="images/subway.jpg" alt="Subway, Seoul" width="400" height="280">
+      <div class="message"><i class="material-icons" style="font-size:30px;color:red">open_in_new</i></div>
+      <div class="source">source: Seoul Metro</div>
+
+  </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" src="images/subway.jpg">
+        <div id="caption"></div>
+      </div>
+  <div class="con_desc">
+    <h3>
+        <center>SUBWAY</center>
+    </h3>
+    <p>
+        <strong>The Subway</strong> is one of the most convenient transportation. <br>
+        <strong>Hours:</strong> 5:30AM - 00:00AM <br>
+        <strong>Phone:</strong> +82) 02-2148-4160<br>
+        <strong>Fees(Adults):</strong> Transporation card: 1,250(won), cash: 1,350(won) <br>
+        <strong>Website:</strong><a href="https://english.visitkorea.or.kr/enu/TRP/TP_ENG_8_1_1.jsp"> More Info</a>
+    </p>
+  </div>
+</div> 
+
+<div class="social">
+      <a class="button" href="https://twitter.com/koreantravel?lang=en/" class="btn" target="_blank">TWITTER</a>
+      <a class="button" href="https://www.instagram.com/seoul_official/?hl=en" target="_blank">INSTAGRAM</a>
+      <a class="button" href="https://www.facebook.com/VisitSeoul/" target="_blank">FACEBOOK</a>
+      <a class="button" href="http://english.visitseoul.net/index" target="_blank">OFFICIAL</a>
+</div> 
+
+</div>
+
+ <footer> 
+  <p>Copyright &copy; 2018 Haein Oh</p>        
+ </footer>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+</script>
+</body>
+</html>

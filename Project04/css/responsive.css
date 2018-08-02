@@ -1,0 +1,131 @@
+@media screen and (max-width: 640px)
+{
+ 
+  .home_desc{
+    padding-top: 20%;
+    padding-bottom: 5%;
+    margin: auto;
+  }
+
+  .home_desc img{
+    padding-top: 5%;
+    width: 70%;
+  }
+
+  .home_desc h3{
+    padding-top: 17%;
+    font-size: 1.3em;
+  }
+
+  header .social{
+    padding-top: 17%;
+  }
+
+  #education{
+    padding-bottom: 100px;
+  }
+
+  #education h1{
+    padding-top: 20px;
+  }
+
+  .degree{
+    padding-top: 20px;
+  }
+
+  .degree img{
+    margin-left: 3%;
+    height: 150px;
+    width: 150px;
+  }
+
+  .degree p{
+    font-size: 0.9em;
+  }
+
+  .edu_container{
+
+  }
+  
+  .edu_desc h2{
+    font-size: 1.2em; 
+    padding-bottom: 5%;
+  } 
+
+  .edu_desc p{
+    font-size: 1em;
+    width: 500px;
+    margin: auto;
+  }
+
+  .skills_container{
+    width: 530px;
+  }
+
+  .resume_button{
+    width: 250px;
+    height: 40px;
+    font-size: 1.4em;
+  }
+    
+  #projects{
+    padding-top: 80px;
+    padding-bottom: 250px;
+  }
+
+  .projects_container h1{
+    padding-bottom: 50px;
+  }
+
+  .slideshow-container img{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 530px;
+    max-width: 530px;
+    height: auto;
+  }
+
+  .next{
+    right: 10%;
+  }
+
+  .prev, .next {font-size: 11px}
+
+  .pro_text{
+    bottom: -130px;
+  }
+
+  form{
+    width: 480px;
+    padding-bottom: 20px;
+  }
+
+  label{
+    margin-top: 30px;
+  }
+
+  input, textarea{
+    width: 480px;
+    height: 25px;
+  }
+
+  textarea{
+    height: 120px;
+  }  
+
+  #contact{
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  #goingup a{
+    font-size: 23px;
+  }
+
+  ul#nav li a{
+    color: #4e6690;
+  }
+
+}

@@ -1,0 +1,738 @@
+/* body */
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  /*width: 1366px;
+  height: 768px;*/
+  //background-image: url('../images/background.png');
+  background-color: #ffffff;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  overflow: overflow;
+}
+
+h1{
+  color: #0000000;
+  text-align: center;
+  font-family: 'Archivo Black';
+  font-size: 2.1em;
+}
+
+h2{
+  //color: #000080;
+  color: #004d99; /*Chico Red color */
+  text-align: center;
+  font-family: 'Amaranth';
+  font-size: 1.5em;
+}
+
+h3{
+  color: #8C2332; /*Chico Red color */
+  font-family: 'Amiko';
+  font-size: 19px;
+}
+
+h4{
+  font-family: 'Asul'; 
+  font-size: 18px;
+}
+
+/* header */
+header {
+  position: relative;
+  height: 830px;
+  width: 100%;
+  min-height: 700px;
+  font-family: 'Archivo Black';
+  //background: url(../images/main.jpg) no-repeat top center;
+  //-background-size: cover !important;
+  //-webkit-background-size: cover !important;
+  //background: #f2f2f2;
+  background-color: #e6e6ff;
+  text-align: center;
+  overflow: hidden;
+}
+
+header h1{
+  color: white;
+}
+
+/* nav ========== */
+.toggle-menu {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+}
+
+
+/* STYLES FOR THE "scroll" CLASS
+ * –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll {
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+}
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.scroll nav {
+  align-items: center;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+
+/* MQ STYLES
+ * –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+*/
+/* navigation bar 
+#nav-container ul, #nav-container li, #nav-container a{
+  border: none;
+  outline: none;
+	padding-top:10px;
+  margin: 0;
+  padding: 0;
+}
+*/
+#nav-container{
+  position: fixed;
+  border: none;
+  outline: none;
+	padding-top:10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+  //box-sizing: border-box;
+}
+
+label, #toggle{
+  display: none;
+}
+
+#nav{
+  border: none;
+	width: 100%;
+	padding:0px;
+	//background-color: #8c8c8c;
+	float: left;
+}
+
+ul#nav{
+  position: fixed;
+  padding-left: 2%;
+  min-height: 50px;
+  width: auto;
+  text-align: center;
+  //display: flex;
+  transition: margin .2s;
+  z-index: 9999;
+  float: right;
+}
+
+ul#nav li{
+  //position: relative;
+  list-style: none;
+  //height: 49px;
+  display: inline;
+  float: left;
+  padding: 0;
+  
+}
+
+ul#nav li a{
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+   text-decoration: none;
+   text-align: left;
+   color: #000000;
+
+   -webkit-transition: color .2s ease-in-out;
+   -moz-transition: color .2s ease-in-out;
+   -o-transition: color .2s ease-in-out;
+   -ms-transition: color .2s ease-in-out;
+   transition: color .2s ease-in-out;
+
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+//ul#nav li.current a { color: #4e6690; }
+
+
+/* footer */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+  text-align: center;
+  font-family: 'Amiko';
+  font-size: 80%;
+  color: #ffffff;
+  font-style: italic;  
+  font-weight: bold;
+  //position: fixed;
+  overflow: overflow;
+}
+
+footer p{
+  padding-top: 20px;
+}
+
+/* index.html */
+#home_container{
+  padding-top: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo {
+  padding-top: 2%;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  transition: all .2s;
+}
+
+.logo img{
+	width: 300px;
+	height: auto;
+  //vertical-align: middle;
+}
+
+.home_desc{
+  padding-top: 7%;
+  padding-bottom: 2%;
+  margin: auto;
+}
+
+.home_desc h1{
+  font-size: 4em;
+  padding-bottom: 2%;
+}
+
+.home_desc h3{
+  color: #333333;
+  font-size: 1.6em;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+/* header social links */
+header .social {
+  padding-top: 2%;
+  font-size: 40px;
+  text-shadow: 0px 1px 2px #000000;
+}
+header .social li {
+  display: inline-block;
+  margin: 0 30px;
+  padding: 0;
+}
+header .social li a{ 
+  color: #f2f2f2; 
+}
+
+header .social li a:hover{ 
+  color: #4e6690; 
+}
+
+/* scrolldown link */
+header .scrollDown a {
+ position: absolute;
+ bottom: 30px;
+ left: 50%;
+ margin-left: -29px;
+ color: #fff;
+ display: block;
+ height: 42px;
+ width: 42px;
+ font-size: 42px;
+ line-height: 42px;
+ color: #fff;
+ border-radius: 100%;
+
+ -webkit-transition: all .3s ease-in-out;
+ -moz-transition: all .3s ease-in-out;
+ -o-transition: all .3s ease-in-out;
+ transition: all .3s ease-in-out;
+}
+header .scrollDown a:hover { color: #11ABB0; }
+
+
+.social{
+  clear: both;
+  text-align: center;
+}
+
+.social li a{
+  float: left;
+  list-style: none;
+}
+
+/* education.html */
+#education{
+  padding-top: 69px;
+  padding-bottom: 69px;
+  overflow: hidden;
+}
+.edu_container{
+  padding-top: 56px;
+  font-family: 'Allan';
+  font-size: 20px;
+  margin: auto;
+}
+.degree{
+  margin: auto;
+}
+
+.degree img{
+  float: left;
+  margin-left: 20%;
+  margin-right: 50px;
+  height: 250px;
+  width: 250px;
+}
+
+.degree h3 p{
+  float: right;
+}
+
+.degree h3{
+  font-size: 1.2em;
+}
+
+.degree p{
+  font-family:'Cantarell';
+  font-size: 1.1em;
+}
+
+.edu_desc h2{
+  padding-bottom: 2%;
+}
+
+.edu_desc p{
+  font-size: 1.2em;
+  font-family: 'Asul';
+  width: 800px;
+  margin: auto;
+}
+
+.resume{
+  padding-top: 12%;
+  padding-bottom: 2%;
+  text-align: center;
+  margin: auto;
+}
+
+  /*resume_button*/
+.resume_button{
+  margin-top: 10%;
+  vertical-align: center;
+  margin: auto;
+  width: 330px;
+  height: 45px;
+  background-color: #4d79ff;
+  color:#fff;
+  border:none;
+  //position: relative;
+  font-size:1.8em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.resume_button{
+  text-decoration: none;
+  font-family: 'Contrail One';
+  text-align: center;
+  color: #ffffff;
+}
+
+.resume_button a{
+  text-decoration: none;
+  font-family: 'Contrail One';
+  text-align: center;
+  color: #ffffff;
+}
+
+.resume_button:hover{
+  background-color: #404040;
+  color: #000000;
+}
+
+/* skill.html */
+#skills{
+  padding-top: 70px;
+  padding-bottom: 110px;
+  overflow: hidden;
+  background: #bfbfbf;
+}
+
+.skills_container{
+  padding-top: 70px;
+  width: 800px;
+  margin: auto;
+}
+
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:20px;
+  width:100%;
+  background:#eee;
+  height:55px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position: relative;
+  display: block;
+  //top:0;
+  //left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:55px;
+  line-height:55px;
+  font-family: 'Amiko';
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:50px;
+  width:0px;
+  //background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+#skillbar_html{
+  width: 80%;
+}
+
+#skillbar_css{
+  width: 65%;
+}
+
+#skillbar_cplus{
+  width: 80%;
+}
+
+#skillbar_c{
+  width: 60%;
+}
+
+#skillbar_mysql{
+  width: 55%;
+}
+
+#skillbar_java{
+  width: 40%;
+}
+
+#skillbar_php{
+  width: 30%;
+}
+
+#skillbar_html{
+  width: 80%;
+}
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:12px;
+  height:55px;
+  line-height:55px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}
+
+
+/* project.html */
+#projects{
+  padding-top: 46px;
+  padding-bottom: 250px;
+  //overflow: hidden;
+}
+/*
+.mySlides{
+  display: none;
+}
+*/
+.projects_container h1{
+  padding-bottom: 70px;
+}
+
+.slideshow-container img {
+  vertical-align: middle;
+  padding-bottom: 35px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  //width: 700px;
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+/*.text {
+  color: #f2f2f2;
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+*/
+/* Number text (1/3 etc) */
+.pro_text {
+  color: Black;
+  font-size: 23px;
+  font-style: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -80px;
+  font-family: 'Basic';
+}
+
+.pro_text span{
+  font-family: 'Archivo Black'; 
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* contact.html */
+#contact{
+  padding-top: 60px;
+  padding-bottom: 25px;
+  background: #bfbfbf;
+  //overflow: hidden;
+}
+
+.contact_container{
+  margin: auto;
+  position: relative;
+}
+
+.contact_container h1{
+  padding-bottom: 50px;
+  color: #000000;
+}
+
+form{
+  width: 600px;
+  margin: auto;
+}
+
+label{
+  display: block;
+  margin-top: 30px; 
+  letter-spacing: 2px;
+  font-family: 'Basic';
+  font-size: 1.3em;
+  color: #262626;
+}
+
+input, textarea{
+  width: 600px;
+  height: 27px;
+  background: #efefef; 
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin-top: 3px;
+  font-size 0.9em;
+  color: #3a3a3a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius:5px;
+  font-family: 'Athiti';
+}
+
+textarea{
+  height: 150px;
+  background: right no-repeat #efefef;
+}
+
+input:focus, textarea:focus{
+  border: 1px solid #0099ff;
+}
+
+input[type="submit"]{
+  width: 140px;
+  height: 45px;
+  background: 'light-gray'; 
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: black;
+  font-family: 'Basic';
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    opacity:.9;
+}
+
+input[placeholder]{
+  font-size:1.1em;
+}
+
+textarea[placeholder]{
+  font-size: 1.1em;
+}
+
+#goingup{
+  position: relative;
+  text-align: center;
+  //vertical-align: middle;
+  margin: auto; 
+  float: center;
+  padding-top: 40px;
+  bottom: 0px;
+}
+
+#goingup a{
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+#goingup a:hover{ 
+  color: #4e6690; 
+}
